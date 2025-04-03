@@ -435,11 +435,11 @@ img {
 
   /* Para las filas impares (1, 3, 5, 7), video a la izquierda y texto a la derecha */
   .row:nth-child(odd) .col-md-6:first-child {
-    order: 0; /* El video se mueve a la izquierda */
+    order: 0; /* El video se mantiene a la izquierda */
   }
 
   .row:nth-child(odd) .col-md-6:last-child {
-    order: 1; /* El texto se mueve a la derecha */
+    order: 1; /* El texto se mantiene a la derecha */
   }
 
   /* Para las filas pares (2, 4, 6, 8), texto a la izquierda y video a la derecha */
@@ -472,4 +472,3 @@ img {
     height: auto;
   }
 }
-
