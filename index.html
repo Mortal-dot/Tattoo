@@ -409,34 +409,45 @@
 
 
 
-
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Crear un observador para detectar cuando los elementos están visibles en la pantalla
-      const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  // Cuando el elemento es visible, se le agrega la clase 'visible'
-                  entry.target.classList.add('visible');
-                  // Desactiva el observador para este elemento (solo se ejecuta una vez)
-                  observer.unobserve(entry.target);
-              }
-          });
-      }, {
-          threshold: 0.5 // 50% del elemento debe ser visible para activar la animación
-      });
+        const scrollButton = document.getElementById('scrollButton');
 
-      // Seleccionar todos los elementos con la clase 'text-animated' y 'video-style'
-      const elementsToAnimate = document.querySelectorAll('.text-animated, .video-style');
+        function toggleButton() {
+            if (window.scrollY >= document.documentElement.scrollHeight / 2) {
+                scrollButton.classList.add('show-button');
+            } else {
+                scrollButton.classList.remove('show-button');
+            }
+        }
 
-      // Observar cada elemento
-      elementsToAnimate.forEach(element => {
-          observer.observe(element);
-      });
-  });
+        window.addEventListener('scroll', toggleButton);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Crear un observador para detectar cuando los elementos están visibles en la pantalla
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Cuando el elemento es visible, se le agrega la clase 'visible'
+                        entry.target.classList.add('visible');
+                        // Desactiva el observador para este elemento (solo se ejecuta una vez)
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5 // 50% del elemento debe ser visible para activar la animación
+            });
+
+            // Seleccionar todos los elementos con la clase 'text-animated' y 'video-style'
+            const elementsToAnimate = document.querySelectorAll('.text-animated, .video-style');
+
+            // Observar cada elemento
+            elementsToAnimate.forEach(element => {
+                observer.observe(element);
+            });
+        });
 
 
-  
+        
 </script>
 
 
