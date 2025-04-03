@@ -653,6 +653,105 @@ section {
   transition: opacity 1s ease-in-out;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reiniciar estilos en móviles y aplicar los nuevos estilos */
+@media (max-width: 768px) {
+    /* Reiniciar la navbar en móviles */
+    .navbar-mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(45, 37, 38, 0.9);
+        transition: 0.3s;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    /* Reiniciar el botón de toggle */
+    .navbar-mobile .mobile-nav-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    /* Reiniciar y optimizar el menú desplegable */
+    .navbar-mobile ul {
+        display: block;
+        position: absolute;
+        top: 50px; /* Ajuste de la distancia superior */
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 20px 0; /* Ajuste del padding */
+        background-color: #030303;
+        overflow: auto;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    /* Reiniciar el estilo de los elementos de la lista */
+    .navbar-mobile > ul > li {
+        padding: 0;
+    }
+
+    /* Reiniciar estilo de enlaces y hover */
+    .navbar-mobile a,
+    .navbar-mobile a:hover {
+        padding: 10px 20px;
+        font-size: 16px; /* Reducción de tamaño de fuente */
+        color: #584e4e;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-mobile a:hover,
+    .navbar-mobile .active,
+    .navbar-mobile li:hover > a {
+        color: #fff;
+    }
+
+    /* Reiniciar y reducir márgenes del botón getstarted */
+    .navbar-mobile .getstarted,
+    .navbar-mobile .getstarted:focus {
+        margin: 10px; /* Reduce margen en pantallas móviles */
+    }
+
+    /* Reset para asegurar que todo esté bien alineado y optimizado */
+    .navbar-mobile ul {
+        padding: 10px 0; /* Reducción de padding adicional */
+    }
+
+    /* Ajuste de los elementos para móviles */
+    .navbar-mobile .mobile-nav-toggle {
+        font-size: 24px; /* Ajustar el tamaño del icono del menú */
+    }
+}
+
 .video-style.visible {
   opacity: 1;
 }
