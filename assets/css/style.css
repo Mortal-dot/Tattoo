@@ -433,7 +433,7 @@ img {
     margin-bottom: 20px; /* Espacio entre filas */
   }
 
-  /* Cambiar la posición de los elementos para las filas impares */
+  /* Cambiar la posición de los elementos para todas las filas (pares e impares) */
   .row:nth-child(odd) .col-md-6:first-child {
     order: 1; /* El video se mueve a la derecha */
   }
@@ -442,7 +442,6 @@ img {
     order: 0; /* El texto se mueve a la izquierda */
   }
 
-  /* Para las filas pares */
   .row:nth-child(even) .col-md-6:first-child {
     order: 0; /* El texto se mueve a la izquierda */
   }
