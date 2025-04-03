@@ -327,14 +327,20 @@ section {
 @media (max-width: 768px) {
     /* Ajustar el contenedor de la galería para que se vea más grande */
     .gallery .container {
-        width: 150%;  /* Aumentar el tamaño del contenedor (ajústalo al porcentaje que desees) */
+        width: 180%;  /* Aumentar el tamaño del contenedor */
         margin: 0 auto;  /* Centra el contenedor en la pantalla */
+        max-width: 100vw;  /* Limitar el contenedor para que no se desborde */
+    }
+
+    /* Evitar desbordamiento horizontal */
+    body, html {
+        overflow-x: hidden;  /* Ocultar cualquier contenido que se desborde horizontalmente */
     }
 
     /* Ajustar las imágenes en la galería */
     .gallery .row {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;  /* Permitir que las imágenes se acomoden en filas cuando no haya suficiente espacio */
         gap: 20px;
         justify-content: flex-start;  /* Alinear las imágenes a la izquierda en dispositivos móviles */
     }
@@ -352,7 +358,6 @@ section {
         height: auto;  /* Mantiene la proporción de la imagen */
     }
 }
-
 
 
 
