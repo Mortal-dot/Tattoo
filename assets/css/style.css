@@ -327,7 +327,7 @@ section {
 @media (max-width: 768px) {
     /* Ajustar el contenedor de la galería para que se vea más grande */
     .gallery .container {
-        width: 1000%;  /* Aumentar el tamaño del contenedor */
+        width: 150%;  /* Aumentar el tamaño del contenedor */
         margin: 0 auto;  /* Centra el contenedor en la pantalla */
         max-width: 100vw;  /* Limitar el contenedor para que no se desborde */
     }
@@ -348,14 +348,15 @@ section {
     .gallery .col-xl-3,
     .gallery .col-lg-4,
     .gallery .col-md-6 {
-        flex: 0 0 calc(25% - 10px);  /* 4 imágenes por fila con espacio entre ellas */
-        margin-bottom: 10px;  /* Aumentamos el espacio entre las filas */
+        flex: 0 0 calc(50% - 10px);  /* 2 imágenes por fila con espacio entre ellas */
+        margin-bottom: 20px;  /* Aumentamos el espacio entre las filas */
     }
 
     /* Estirar las imágenes a los lados en dispositivos móviles */
     .gallery .gallery-item img {
-        width: 200%;  /* Asegura que las imágenes ocupen todo el ancho disponible */
+        width: 100%;  /* Asegura que las imágenes ocupen todo el ancho disponible */
         height: auto;  /* Mantiene la proporción de la imagen */
+        max-width: 100%;  /* Limitar el ancho máximo para evitar desbordamiento */
     }
 }
 
