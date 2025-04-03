@@ -4,17 +4,15 @@ body {
     background: #030303;
 }
 
-
 a {
     color: #fff;
     text-decoration: none;
-  }
-  
+}
+
 a:hover {
     color: #383737;
     text-decoration: none;
-  }
-
+}
 
 h1,
 h2,
@@ -32,7 +30,7 @@ h6 {
     padding: 20px 0;
 }
 
-#header .logo{
+#header .logo {
     font-size: 30px;
     margin: 0;
     padding: 0;
@@ -47,8 +45,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(29, 29, 29, 0.9);
-  padding: 12px 0;
+    background: rgba(29, 29, 29, 0.9);
+    padding: 12px 0;
 }
 
 /*--navbar--*/
@@ -122,7 +120,6 @@ h6 {
 .navbar li:hover>a {
     color: #fff;
 }
-
 
 /*--mobile navigation---*/
 
@@ -199,7 +196,6 @@ h6 {
 .navbar-mobile .getstarted:focus {
     margin: 15px;
 }
-
 
 /*--hero--*/
 #hero {
@@ -287,34 +283,33 @@ h6 {
     }
 }
 
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
     padding: 60px 0;
     overflow: hidden;
-  }
-  
-  .section-bg {
+}
+
+.section-bg {
     background-color: #d8f7f3;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     text-align: center;
     padding-bottom: 30px;
-  }
-  
-  .section-title h2 {
+}
+
+.section-title h2 {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-  }
-  
-  .section-title h2::after {
+}
+
+.section-title h2::after {
     content: "";
     position: absolute;
     display: block;
@@ -323,301 +318,261 @@ section {
     background: #fff;
     bottom: 0;
     left: calc(50% - 25px);
-  }
-  
-  .section-title p {
+}
+
+.section-title p {
     margin-bottom: 0;
-  }
-  
-  /*--------------------------------------------------------------
-  # Contact Us
-  --------------------------------------------------------------*/
-  .service .icon-box {
+}
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.service .icon-box {
     margin-bottom: 20px;
     text-align: center;
-  }
-  
-  .service .icon {
+}
+
+.service .icon {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-  }
-  
-  .service .icon i {
+}
+
+.service .icon i {
     color: #fff;
     font-size: 42px;
     line-height: 0;
-  }
-  
-  .service .title {
+}
+
+.service .title {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
     text-transform: uppercase;
-  }
-  
-  .service .title a {
+}
+
+.service .title a {
     color: #fff;
     transition: 0.3s;
-  }
-  
-  .service .description {
+}
+
+.service .description {
     line-height: 24px;
     font-size: 14px;
-  }
+}
 
 /*-------------gallery-----*/
-.gallery .section-title h3:hover{
-  color: #584e4e;
-  cursor: pointer;
+.gallery .section-title h3:hover {
+    color: #584e4e;
+    cursor: pointer;
 }
-.gallery .gallery-item {
-  overflow: hidden;
-  padding: 0 6px;
 
+.gallery .gallery-item {
+    overflow: hidden;
+    padding: 0 6px;
 }
 
 .gallery .gallery-item img {
-  transition: all ease-in-out 0.4s;
-  width: 100%;
-  height: 350px;
-  margin-top: 15px;
-  cursor: pointer;
-  filter: grayscale(1) brightness(0.5);
+    transition: all ease-in-out 0.4s;
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    cursor: pointer;
+    filter: grayscale(1) brightness(0.5);
 }
 
 .gallery .gallery-item:hover img {
-  transform: scale(1.1);
-  filter: grayscale(0) brightness(1);
+    transform: scale(1.1);
+    filter: grayscale(0) brightness(1);
 }
 
-
 @media (max-width: 768px) {
-  .gallery .gallery-item img {
-
-    width: 100%;
-    height: 100%;
-
-  }
+    .gallery .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*------ About ---------------*/
 #about {
-  padding: 80px 0;
+    padding: 80px 0;
 }
 
 #about .about-content {
-  padding-top: 40px;
+    padding-top: 40px;
 }
 
 #about .about-content h2 {
-  color: #fff;
-  font-family: "Libre Baskerville", sans-serif;
-  font-weight: 700;
+    color: #fff;
+    font-family: "Libre Baskerville", sans-serif;
+    font-weight: 700;
 }
 
 #about .about-content h3 {
-  color: #fff;
-  font-weight: 400;
-  font-size: 22px;
-  font-style: italic;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: italic;
 }
 
 #about .about-content ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 #about .about-content ul li {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 #about .about-content ul li i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #1bb1dc;
+    font-size: 20px;
+    padding-right: 4px;
+    color: #1bb1dc;
 }
 
 #about .about-img {
-  position: relative;
-  margin: 30px 0 30px 80px;
+    position: relative;
+    margin: 30px 0 30px 80px;
 }
 
 #about .about-img img {
-  width: 100%;
-  height: 600px;
-  transition: 0.5s;
+    width: 100%;
+    height: 600px;
+    transition: 0.5s;
 }
-
 
 /*----------------- Footer----------------------------*/
 #footer {
-  background: #0f0f0f;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 30px 0;
+    background: #0f0f0f;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
 }
 
 #footer h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  position: relative;
-  font-family: "Libre Baskerville", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    font-family: "Libre Baskerville", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
 }
 
 #footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+    margin: 0 0 40px 0;
 }
 
 #footer .social-links a {
-  font-size: 25px;
-  display: inline-block;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 18px;
-  border-radius: 50%;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  transition: 0.3s;
+    font-size: 25px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 18px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
 }
 
 #footer .social-links a:hover {
-  background: #383737;
-  color: #fff;
-  font-size: 35px;
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
+    background: #383737;
+    color: #fff;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
 }
 
 #footer .copyright {
-  margin: 0 0 5px 0;
+    margin: 0 0 5px 0;
 }
 
 #footer .credits {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 #footer .credits a {
-  color: #00b371;
-  transition: 0.3s;
+    color: #00b371;
+    transition: 0.3s;
 }
 
 #footer .credits a:hover {
-  color: #009961;
+    color: #009961;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Estilo para los videos */
 .video-style {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Media query para pantallas móviles */
 @media (max-width: 768px) {
-  .row {
-    display: flex; /* Usamos flexbox para alinear elementos lado a lado */
-    flex-wrap: wrap; /* Permite que los elementos envuelvan y se ajusten */
-    justify-content: space-between; /* Deja espacio entre los elementos */
-    align-items: stretch; /* Asegura que ambos contenedores tengan el mismo tamaño */
-  }
+    .row {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        align-items: stretch;
+    }
 
-  .col-md-6 {
-    width: 48%; /* Ajusta el ancho para que los contenedores estén uno al lado del otro */
-    display: flex;
-    flex: 1; /* Hace que todos los contenedores tengan la misma altura */
-    flex-direction: column;
-    margin-bottom: 20px; /* Espacio entre filas */
-  }
+    .col-md-6 {
+        width: 48%; 
+        display: flex;
+        flex: 1; 
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
 
-  /* Cambiar la posición de los elementos para las filas impares */
-  .row:nth-child(odd) .col-md-6:first-child {
-    order: 1; /* El video se mueve a la derecha */
-  }
+    /* Cambiar la posición de los elementos para las filas impares */
+    .row:nth-child(odd) .col-md-6:first-child {
+        order: 1; 
+    }
 
-  .row:nth-child(odd) .col-md-6:last-child {
-    order: 0; /* El texto se mueve a la izquierda */
-  }
+    .row:nth-child(odd) .col-md-6:last-child {
+        order: 0; 
+    }
 
-  /* Para las filas pares */
-  .row:nth-child(even) .col-md-6:first-child {
-    order: 0; /* El texto se mueve a la izquierda */
-  }
+    /* Para las filas pares */
+    .row:nth-child(even) .col-md-6:first-child {
+        order: 0;
+    }
 
-  .row:nth-child(even) .col-md-6:last-child {
-    order: 1; /* El video se mueve a la derecha */
-  }
+    .row:nth-child(even) .col-md-6:last-child {
+        order: 1;
+    }
 
-  /* Especificar los cambios en las filas 2 y 4 */
-  .row:nth-child(2) .col-md-6:first-child {
-    order: 1; /* El texto 2 va a la derecha */
-  }
+    .text-white {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
 
-  .row:nth-child(2) .col-md-6:last-child {
-    order: 0; /* El video 2 va a la izquierda */
-  }
+    .display-4 {
+        font-size: 1.5rem;
+    }
 
-  .row:nth-child(4) .col-md-6:first-child {
-    order: 1; /* El texto 4 va a la derecha */
-  }
-
-  .row:nth-child(4) .col-md-6:last-child {
-    order: 0; /* El video 4 va a la izquierda */
-  }
-
-  /* Asegura que el texto se ajuste bien */
-  .text-white {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    text-align: center;
-  }
-
-  /* Opcional: Ajustar el tamaño de los textos en móviles */
-  .display-4 {
-    font-size: 1.5rem; /* Reduce el tamaño de fuente en móviles */
-  }
-
-  /* Ajuste de los videos para que también ocupen todo el espacio */
-  .video-style {
-    width: 100%;
-    height: auto;
-  }
+    .video-style {
+        width: 100%;
+        height: auto;
+    }
 }
-
-
-
-
-
 
 /* Animación */
 @keyframes fadeInUp {
@@ -669,84 +624,3 @@ section {
 
 
 
-/* Reiniciar estilos en móviles y aplicar los nuevos estilos */
-@media (max-width: 768px) {
-    /* Reiniciar la navbar en móviles */
-    .navbar-mobile {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: rgba(45, 37, 38, 0.9);
-        transition: 0.3s;
-        z-index: 999;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        overflow: hidden;
-    }
-
-    /* Reiniciar el botón de toggle */
-    .navbar-mobile .mobile-nav-toggle {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-    }
-
-    /* Reiniciar y optimizar el menú desplegable */
-    .navbar-mobile ul {
-        display: block;
-        position: absolute;
-        top: 50px; /* Ajuste de la distancia superior */
-        right: 15px;
-        bottom: 15px;
-        left: 15px;
-        padding: 20px 0; /* Ajuste del padding */
-        background-color: #030303;
-        overflow: auto;
-        transition: 0.3s;
-        text-align: center;
-    }
-
-    /* Reiniciar el estilo de los elementos de la lista */
-    .navbar-mobile > ul > li {
-        padding: 0;
-    }
-
-    /* Reiniciar estilo de enlaces y hover */
-    .navbar-mobile a,
-    .navbar-mobile a:hover {
-        padding: 10px 20px;
-        font-size: 16px; /* Reducción de tamaño de fuente */
-        color: #584e4e;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navbar-mobile a:hover,
-    .navbar-mobile .active,
-    .navbar-mobile li:hover > a {
-        color: #fff;
-    }
-
-    /* Reiniciar y reducir márgenes del botón getstarted */
-    .navbar-mobile .getstarted,
-    .navbar-mobile .getstarted:focus {
-        margin: 10px; /* Reduce margen en pantallas móviles */
-    }
-
-    /* Reset para asegurar que todo esté bien alineado y optimizado */
-    .navbar-mobile ul {
-        padding: 10px 0; /* Reducción de padding adicional */
-    }
-
-    /* Ajuste de los elementos para móviles */
-    .navbar-mobile .mobile-nav-toggle {
-        font-size: 24px; /* Ajustar el tamaño del icono del menú */
-    }
-}
-
-.video-style.visible {
-  opacity: 1;
-}
