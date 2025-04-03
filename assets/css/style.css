@@ -318,3 +318,44 @@ section {
   transform: translateY(30px);
   animation: fadeInUp 1s ease-out forwards;
 }
+
+
+
+
+
+
+/* Media Queries para Móviles */
+@media (max-width: 768px) {
+    /* Ajustar el contenedor de la galería para que sea horizontal */
+    .gallery .row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+    }
+
+    .gallery .col-xl-3,
+    .gallery .col-lg-4,
+    .gallery .col-md-6 {
+        flex: 0 0 auto;  /* Mantiene las imágenes en una fila */
+        width: 18%;  /* Ajusta el tamaño para que quepan 5 imágenes por fila */
+    }
+
+    /* Hacer que las imágenes sean más grandes y se ajusten mejor */
+    .gallery .gallery-item img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    /* Aumentar el espacio entre las imágenes */
+    .gallery-item {
+        padding: 10px;
+    }
+
+    /* Asegurar que los enlaces de las imágenes no afecten la presentación */
+    .gallery .gallery-lightbox {
+        display: inline-block;
+        width: 100%;
+    }
+}
