@@ -329,7 +329,7 @@ section {
     .gallery .row {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 20px;
         justify-content: flex-start;  /* Alinear las imágenes a la izquierda en dispositivos móviles */
     }
 
@@ -342,42 +342,10 @@ section {
 
     /* Aumentar el tamaño de las imágenes considerablemente en dispositivos móviles */
     .gallery .gallery-item img {
-        width: 100%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
+        width: 300%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
         height: auto;
-        max-width: 100%;  /* Aseguramos que las imágenes no se desborden */
+        max-width: 300%;  /* Aseguramos que las imágenes no se desborden */
     }
 
-    /* Asegurar que el contenedor no haga zoom o desborde en dispositivos móviles */
-    .gallery {
-        overflow: hidden;
-    }
-
-    /* Evitar zoom en la página en dispositivos móviles */
-    body {
-        overflow-x: hidden;  /* Evita el desplazamiento horizontal de la página */
-    }
-
-    /* Hacer que las imágenes ocupen más espacio en la fila */
-    .gallery .gallery-item img {
-        width: 100%;  /* Hacer que las imágenes ocupen todo el ancho disponible */
-        max-width: 100%;  /* Asegura que las imágenes no se estiren más allá de su tamaño */
-        height: auto;  /* Mantener la proporción de las imágenes */
-    }
-
-    /* Asegurar que las imágenes no se puedan hacer zoom */
-    html, body {
-        touch-action: manipulation;  /* Desactiva el zoom táctil en móviles */
-    }
-
-    /* Metaetiqueta para evitar el zoom en la página */
-    @viewport {
-        user-zoom: none;
-    }
-
-    /* Ajustar cada fila de manera correcta */
-    .gallery .row > .col-xl-3:nth-child(n+5),
-    .gallery .row > .col-lg-4:nth-child(n+5),
-    .gallery .row > .col-md-6:nth-child(n+5) {
-        flex: 0 0 calc(25% - 10px);  /* Mantener las imágenes de abajo con el mismo tamaño */
-    }
+ 
 }
