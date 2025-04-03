@@ -323,6 +323,8 @@ section {
 
 
 
+
+
 /* Media Queries para Móviles */
 @media (max-width: 768px) {
     /* Ajustar el contenedor de la galería para que se vea en formato de filas */
@@ -344,7 +346,8 @@ section {
     .gallery .gallery-item img {
         width: 500%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
         height: auto;
-        max-width: 500%;  /* Aseguramos que las imágenes no se desborden */
+        max-width: 300%;  /* Aseguramos que las imágenes no se desborden */
     }
 
-}
+ 
+} 
