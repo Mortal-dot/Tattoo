@@ -329,7 +329,7 @@ section {
 @media (max-width: 768px) {
     /* Ajustar el contenedor de la galería para que se vea más grande */
     .gallery .container {
-        width: 95%;  /* Aumentar el tamaño del contenedor (ajústalo al porcentaje que desees) */
+        width: 200%;  /* Aumentar el tamaño del contenedor (ajústalo al porcentaje que desees) */
         margin: 0 auto;  /* Centra el contenedor en la pantalla */
     }
 
