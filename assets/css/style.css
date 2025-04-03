@@ -344,7 +344,7 @@ section {
 
     /* Aumentar el tamaño de las imágenes considerablemente en dispositivos móviles */
     .gallery .gallery-item img {
-        width: 800%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
+        width: 1100%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
         height: auto;
         max-width: 300%;  /* Aseguramos que las imágenes no se desborden */
     }
