@@ -362,14 +362,15 @@ section {
 
 
 
-/* Establecer reglas para evitar el zoom o el desplazamiento no deseado en la página */
+/* Establecer reglas para evitar el zoom en la página, pero permitir el desplazamiento */
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Evita que la página haga zoom o se desplace */
-    touch-action: manipulation; /* Desactiva los gestos táctiles de zoom */
+    overflow-x: hidden; /* Evita que la página haga zoom en el eje X */
+    -ms-overflow-style: none;  /* Para navegadores antiguos */
+    scrollbar-width: none; /* Evitar que aparezca barra de desplazamiento horizontal */
 }
 
 /* Controlar la escala de la página en dispositivos móviles para evitar el zoom */
