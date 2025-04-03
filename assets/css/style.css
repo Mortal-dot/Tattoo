@@ -624,3 +624,123 @@ section {
 
 
 
+/* Estilo para los videos */
+.video-style {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+  .row {
+    display: flex; /* Usamos flexbox para alinear elementos lado a lado */
+    flex-wrap: wrap; /* Permite que los elementos envuelvan y se ajusten */
+    justify-content: space-between; /* Deja espacio entre los elementos */
+    align-items: stretch; /* Asegura que ambos contenedores tengan el mismo tamaño */
+  }
+
+  .col-md-6 {
+    width: 48%; /* Ajusta el ancho para que los contenedores estén uno al lado del otro */
+    display: flex;
+    flex: 1; /* Hace que todos los contenedores tengan la misma altura */
+    flex-direction: column;
+    margin-bottom: 20px; /* Espacio entre filas */
+  }
+
+  /* Cambiar la posición de los elementos para las filas impares */
+  .row:nth-child(odd) .col-md-6:first-child {
+    order: 1; /* El video se mueve a la derecha */
+  }
+
+  .row:nth-child(odd) .col-md-6:last-child {
+    order: 0; /* El texto se mueve a la izquierda */
+  }
+
+  /* Para las filas pares */
+  .row:nth-child(even) .col-md-6:first-child {
+    order: 0; /* El texto se mueve a la izquierda */
+  }
+
+  .row:nth-child(even) .col-md-6:last-child {
+    order: 1; /* El video se mueve a la derecha */
+  }
+
+  /* Especificar los cambios en las filas 2 y 4 */
+  .row:nth-child(2) .col-md-6:first-child {
+    order: 1; /* El texto 2 va a la derecha */
+  }
+
+  .row:nth-child(2) .col-md-6:last-child {
+    order: 0; /* El video 2 va a la izquierda */
+  }
+
+  .row:nth-child(4) .col-md-6:first-child {
+    order: 1; /* El texto 4 va a la derecha */
+  }
+
+  .row:nth-child(4) .col-md-6:last-child {
+    order: 0; /* El video 4 va a la izquierda */
+  }
+
+  /* Asegura que el texto se ajuste bien */
+  .text-white {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Opcional: Ajustar el tamaño de los textos en móviles */
+  .display-4 {
+    font-size: 1.5rem; /* Reduce el tamaño de fuente en móviles */
+  }
+
+  /* Ajuste de los videos para que también ocupen todo el espacio */
+  .video-style {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+/* Animación */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-animated {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.text-animated.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-style {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.video-style.visible {
+  opacity: 1;
+}
