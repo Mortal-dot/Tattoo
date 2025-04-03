@@ -323,19 +323,12 @@ section {
 
 
 
-
 /* Media Queries para Móviles */
 @media (max-width: 768px) {
     /* Ajustar el contenedor de la galería para que se vea más grande */
     .gallery .container {
-        width: 220%;  /* Aumentar el tamaño del contenedor */
+        width: 150%;  /* Aumentar el tamaño del contenedor (ajústalo al porcentaje que desees) */
         margin: 0 auto;  /* Centra el contenedor en la pantalla */
-        max-width: 100vw;  /* Limitar el contenedor para que no se desborde */
-    }
-
-    /* Evitar el desbordamiento horizontal */
-    body, html {
-        overflow-x: hidden;  /* Ocultar cualquier contenido que se desborde horizontalmente */
     }
 
     /* Ajustar las imágenes en la galería */
@@ -359,7 +352,6 @@ section {
         height: auto;  /* Mantiene la proporción de la imagen */
     }
 }
-
 
 
 
