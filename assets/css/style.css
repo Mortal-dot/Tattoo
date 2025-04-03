@@ -342,9 +342,9 @@ section {
 
     /* Aumentar el tamaño de las imágenes considerablemente en dispositivos móviles */
     .gallery .gallery-item img {
-        width: 300%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
-        height: auto;
-        max-width: 300%;  /* Aseguramos que las imágenes no se desborden */
+        width: 500%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
+        height: 200;
+        max-width: 500%;  /* Aseguramos que las imágenes no se desborden */
     }
 
  
