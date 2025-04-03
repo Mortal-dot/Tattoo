@@ -327,7 +327,13 @@ section {
 
 /* Media Queries para Móviles */
 @media (max-width: 768px) {
-    /* Ajustar el contenedor de la galería para que se vea en formato de filas */
+    /* Ajustar el contenedor de la galería para que se vea más grande */
+    .gallery .container {
+        width: 95%;  /* Aumentar el tamaño del contenedor (ajústalo al porcentaje que desees) */
+        margin: 0 auto;  /* Centra el contenedor en la pantalla */
+    }
+
+    /* Ajustar las imágenes en la galería */
     .gallery .row {
         display: flex;
         flex-wrap: wrap;
@@ -342,16 +348,12 @@ section {
         margin-bottom: 10px;  /* Aumentamos el espacio entre las filas */
     }
 
-    /* Aumentar el tamaño de las imágenes considerablemente en dispositivos móviles */
+    /* Estirar las imágenes a los lados en dispositivos móviles */
     .gallery .gallery-item img {
-        width: 1100%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
-        height: auto;
-        max-width: 300%;  /* Aseguramos que las imágenes no se desborden */
+        width: 100%;  /* Asegura que las imágenes ocupen todo el ancho disponible */
+        height: auto;  /* Mantiene la proporción de la imagen */
     }
-
- 
-} 
-
+}
 
 
 
