@@ -354,7 +354,7 @@ section {
 
     /* Estirar las imágenes a los lados en dispositivos móviles */
     .gallery .gallery-item img {
-        width: 100%;  /* Asegura que las imágenes ocupen todo el ancho disponible */
+        width: 200%;  /* Asegura que las imágenes ocupen todo el ancho disponible */
         height: auto;  /* Mantiene la proporción de la imagen */
     }
 }
