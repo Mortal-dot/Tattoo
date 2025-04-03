@@ -513,15 +513,18 @@ img {
 
 
 
-
-/* Cambiar color del texto en el hero a rojo */
+/* Cambiar color del texto en el hero a rojo con brillo */
 #hero h1, #hero h2, #hero h3 {
     color: red;
+    font-weight: bold; /* Asegura que el texto no esté opaco y sea más visible */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.4); /* Efecto de brillo */
 }
 
-/* Si deseas que el color también se aplique en dispositivos móviles, puedes usar este código en el mismo lugar. */
+/* Para dispositivos móviles */
 @media (max-width: 768px) {
     #hero h1, #hero h2, #hero h3 {
         color: red;
+        font-weight: bold; /* Garantiza que el texto sea más visible en móviles */
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.4); /* Efecto de brillo */
     }
 }
