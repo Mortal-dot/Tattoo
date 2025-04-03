@@ -426,7 +426,7 @@ img {
   }
 
   .col-md-6 {
-    width: 48%; /* Ajusta el ancho para que los contenedores estén uno al lado del otro */
+    width: 100%; /* En móviles, cada columna ocupará el 100% del ancho */
     display: flex;
     flex: 1; /* Hace que todos los contenedores tengan la misma altura */
     flex-direction: column;
