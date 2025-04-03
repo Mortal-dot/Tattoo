@@ -346,7 +346,7 @@ section {
     .gallery .gallery-item img {
         width: 800%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
         height: auto;
-        max-width: 50%;  /* Aseguramos que las imágenes no se desborden */
+        max-width: 300%;  /* Aseguramos que las imágenes no se desborden */
     }
 
  
