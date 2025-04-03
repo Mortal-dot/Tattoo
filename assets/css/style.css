@@ -326,36 +326,62 @@ section {
 
 /* Media Queries para Móviles */
 @media (max-width: 768px) {
-    /* Ajustar el contenedor de la galería para que sea horizontal */
+    /* Ajustar el contenedor de la galería para que se vea en formato de filas */
     .gallery .row {
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap;
         gap: 10px;
+        justify-content: flex-end;  /* Alinear las imágenes a la derecha */
     }
 
     .gallery .col-xl-3,
     .gallery .col-lg-4,
     .gallery .col-md-6 {
-        flex: 0 0 auto;  /* Mantiene las imágenes en una fila */
-        width: 18%;  /* Ajusta el tamaño para que quepan 5 imágenes por fila */
+        flex: 0 0 calc(25% - 10px);  /* 4 imágenes por fila con espacio entre ellas */
+        margin-bottom: 20px;  /* Aumentamos el espacio entre las filas para que se vea más espacioso */
     }
 
-    /* Hacer que las imágenes sean más grandes y se ajusten mejor */
+    /* Aumentar el tamaño de las imágenes considerablemente */
     .gallery .gallery-item img {
+        width: 100%;  /* Asegurar que las imágenes ocupen todo el espacio disponible */
         height: auto;
-        max-width: 100%;
+    }
+
+    /* Asegurar que el contenedor no haga zoom o desborde en dispositivos móviles */
+    .gallery {
+        overflow: hidden;
+    }
+
+    /* Hacer que las imágenes sean mucho más grandes en móviles */
+    .gallery .gallery-item img {
+        max-width: 100%;  /* Hacer que las imágenes ocupen todo el ancho disponible */
+        height: auto;  /* Mantener la proporción de las imágenes */
+    }
+
+    /* Si hay demasiadas imágenes, hacer que se desplacen horizontalmente */
+    .gallery .row {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap; /* Evitar que las imágenes se rompan en varias líneas */
+    }
+
+    /* Ajustar cada fila de manera correcta, solo 4 imágenes en la primera fila */
+    .gallery .row > .col-xl-3:nth-child(n+5),
+    .gallery .row > .col-lg-4:nth-child(n+5),
+    .gallery .row > .col-md-6:nth-child(n+5) {
+        flex: 0 0 calc(25% - 10px);  /* Mantener las imágenes de abajo con el mismo tamaño */
     }
     
-    /* Aumentar el espacio entre las imágenes */
-    .gallery-item {
-        padding: 10px;
+    /* Aumentar el tamaño de las imágenes más */
+    .gallery .col-xl-3, 
+    .gallery .col-lg-4, 
+    .gallery .col-md-6 {
+        flex: 0 0 calc(25% - 10px);  /* Asegurar que siempre haya 4 imágenes por fila */
     }
 
-    /* Asegurar que los enlaces de las imágenes no afecten la presentación */
-    .gallery .gallery-lightbox {
-        display: inline-block;
-        width: 100%;
+    /* Para hacer que las imágenes ocupen más espacio en la fila */
+    .gallery .row {
+        margin-left: -5px; /* Ajustar el margen izquierdo para centrar las imágenes */
+        margin-right: -5px; /* Ajustar el margen derecho */
     }
 }
