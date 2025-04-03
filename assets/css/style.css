@@ -451,7 +451,7 @@ img {
     order: 1; /* El video se mueve a la derecha */
   }
 
-  /* Especificar los cambios en las filas 2 y 4 */
+  /* Especificar los cambios en las filas 2, 4, 6, y 8 */
   .row:nth-child(2) .col-md-6:first-child {
     order: 1; /* El texto 2 va a la derecha */
   }
@@ -466,6 +466,22 @@ img {
 
   .row:nth-child(4) .col-md-6:last-child {
     order: 0; /* El video 4 va a la izquierda */
+  }
+
+  .row:nth-child(6) .col-md-6:first-child {
+    order: 1; /* El texto 6 va a la derecha */
+  }
+
+  .row:nth-child(6) .col-md-6:last-child {
+    order: 0; /* El video 6 va a la izquierda */
+  }
+
+  .row:nth-child(8) .col-md-6:first-child {
+    order: 1; /* El texto 8 va a la derecha */
+  }
+
+  .row:nth-child(8) .col-md-6:last-child {
+    order: 0; /* El video 8 va a la izquierda */
   }
 
   /* Asegura que el texto se ajuste bien */
@@ -498,90 +514,3 @@ img {
 
 
 
-/* ======= About Section ======= */
-#about {
-  background-color: #121212;
-  color: #fff;
-  padding: 80px 0;
-}
-
-#about .about-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-#about .about-img img:hover {
-  transform: scale(1.05);
-}
-
-#about .about-content {
-  padding-left: 30px;
-}
-
-#about .section-title {
-  font-size: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  position: relative;
-  color: #fff;
-}
-
-#about .section-title::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  background: #fff;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#about .about-content p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-#about .about-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-#about .about-list li {
-  font-size: 16px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-#about .about-list i {
-  color: #0d6efd;
-  margin-right: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  #about {
-    padding: 60px 15px;
-  }
-
-  #about .about-img img {
-    border-radius: 5px;
-  }
-
-  #about .about-content {
-    padding-left: 0;
-  }
-
-  #about .about-list li {
-    font-size: 14px;
-  }
-
-  #about .section-title {
-    font-size: 28px;
-  }
-}
