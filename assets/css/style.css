@@ -450,6 +450,15 @@ img {
     order: 1; /* El video se mueve a la derecha */
   }
 
+  /* Para las filas adicionales (a partir de la fila 6 en adelante) */
+  .row:nth-child(n+6) .col-md-6:first-child {
+    order: 1; /* El video se mueve a la derecha */
+  }
+
+  .row:nth-child(n+6) .col-md-6:last-child {
+    order: 0; /* El texto se mueve a la izquierda */
+  }
+
   /* Asegura que el texto se ajuste bien */
   .text-white {
     flex: 1;
@@ -470,13 +479,5 @@ img {
     width: 100%;
     height: auto;
   }
-
-  /* Para las filas adicionales (a partir de la fila 6 en adelante) */
-  .row:nth-child(n+6) .col-md-6:first-child {
-    order: 1; /* El video se mueve a la derecha */
-  }
-
-  .row:nth-child(n+6) .col-md-6:last-child {
-    order: 0; /* El texto se mueve a la izquierda */
-  }
 }
+
