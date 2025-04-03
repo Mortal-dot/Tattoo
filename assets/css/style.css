@@ -346,8 +346,45 @@ section {
     .gallery .gallery-item img {
         width: 800%;  /* Asegurar que las imágenes ocupen todo el ancho disponible */
         height: auto;
-        max-width: 300%;  /* Aseguramos que las imágenes no se desborden */
+        max-width: 500%;  /* Aseguramos que las imágenes no se desborden */
     }
 
  
 } 
+
+
+
+
+
+
+
+
+
+
+
+/* Establecer reglas para evitar el zoom o el desplazamiento no deseado en la página */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita que la página haga zoom o se desplace */
+    touch-action: manipulation; /* Desactiva los gestos táctiles de zoom */
+}
+
+/* Controlar la escala de la página en dispositivos móviles para evitar el zoom */
+@viewport {
+    user-scalable: no; /* Impide el zoom en dispositivos móviles */
+}
+
+/* Asegurarse de que las imágenes no se desborden ni hagan zoom */
+img {
+    max-width: 100%; /* Evita que las imágenes se expandan más de lo necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que las imágenes no se deformen */
+}
+
+/* Para evitar transformaciones inesperadas de la escala de los elementos */
+* {
+    transform: none; /* Asegura que no haya transformaciones de escala aplicadas globalmente */
+}
